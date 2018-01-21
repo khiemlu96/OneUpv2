@@ -1,4 +1,4 @@
-## Proposal
+## Project Proposal Document
 
 ### Description
 
@@ -13,4 +13,4 @@ Our justification for starting OneUp has stayed the same since the beginning bec
 Not only do we believe in the potential of this project, but it is feasible for the length of the semester given that we are only a small team of two. Although we already have a semester’s worth of work on the application, there is still much to be done (as mentioned in the ‘Description’). This web application, like most, can never be completely finished and will always require changes and updates. 
 
 More importantly, we see this project as a challenge that will give us a chance to continue to apply knowledge from several of our previous courses. Concepts from CMSI 370 (Interaction Design) will help us build and design the front end web app, CMSI 486 (Intro to Databases) will guide us through creating multiple databases to store videos, CMSI 387 (Operating Systems) which taught us concepts relating to servers and processes handling multiple user requests, and CMSI 401 (Software Engineering Lab) which helped us to organize and design our system in depth. These main courses will give us the tools to be able to complete our vision for this project. However, we still expect to face technical challenges due to our limited experience working with the complexities of a full stack web application. We are eager to learn how to handle these technical difficulties and have confidence that all of the components of our project are within the scope of what we have learned in our curriculum. Overall, we are passionate about completing our vision for OneUp, but there is a lot of work left before we get there.
-#
+
