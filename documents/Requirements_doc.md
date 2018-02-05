@@ -14,32 +14,35 @@ To build the application, OneUp will contain a front end, server, and database w
 
 ### Outline
 
-5.2 CSCI Component Breakdown
-5.3 Functional Requirements by CSC
-5.4 Performance Requirements by CSC
-5.5 Project Environment Requirements
-    5.5.1 Development Environment Requirements
-    5.5.2 Execution Environment Requirements
+- 5.2 CSCI Component Breakdown
+- 5.3 Functional Requirements by CSC
+- 5.4 Performance Requirements by CSC
+- 5.5 Project Environment Requirements
+    - 5.5.1 Development Environment Requirements
+    - 5.5.2 Execution Environment Requirements
 
 ### 5.2 CSCI Component Breakdown
 
 5.2.1 OneUp Frontend CSC -- GUI components for user interaction
-    5.2.1.1 User Login CSU -- accessing user profile
-    5.2.1.2 Profile Tab CSU -- module for editing or viewing user information  
-    5.2.1.3 Home Page CSU -- main page that contains skate clips for user to watch
-    5.2.1.4 Skate Clip CSU -- pop up window when video is clicked
-    5.2.1.5 About Page CSU -- page contains information about the site
+	
+	5.2.1.1 User Login CSU -- accessing user profile
+	5.2.1.2 Profile Tab CSU -- module for editing or viewing user information  
+	5.2.1.3 Home Page CSU -- main page that contains skate clips for user to watch
+	5.2.1.4 Skate Clip CSU -- pop up window when video is clicked
+	5.2.1.5 About Page CSU -- page contains information about the site
     
 5.2.2 OneUp Server CSC -- server that will handle user requests and respond accordingly
-    5.2.2.1 NodeJS CSU -- modules for responding with proper pages
-        5.2.2.1.1 Express -- module for flexible routing
-        5.2.2.1.2 EJS -- module for template engine to serve up dynamic pages
-    5.2.2.2 HTTP CSU -- modules for network requests
+	
+	5.2.2.1 NodeJS CSU -- modules for responding with proper pages
+		5.2.2.1.1 Express -- module for flexible routing
+		5.2.2.1.2 EJS -- module for template engine to serve up dynamic pages
+	5.2.2.2 HTTP CSU -- modules for network requests
 
 5.2.3 OneUp Database CSC -- database components that will handle the data
-    5.2.3.1 MongoDB -- 
-        5.2.3.1.1 Mongoose CSU -- module that communicates with MongoDB to store or retrieve data
-    5.2.3.2 Index CSU -- modules to index data
+	
+	5.2.3.1 MongoDB -- 
+		5.2.3.1.1 Mongoose CSU -- module that communicates with MongoDB to store or retrieve data
+	5.2.3.2 Index CSU -- modules to index data
 
 
 ### 5.3 Functional Requirements
@@ -132,20 +135,30 @@ Note: "Should" requirements are requirements we are not 100% sure on following t
 ### 5.4 Performance Requirements
 
 5.4.1 Switching Between Pages is Immediate -- Delay when changing between pages shall be minimal, taking no more than one second for the requested page to load.
+
 5.4.2 Filtering Videos by Time of Upload Returned in 1Second -- It shall not take longer than 1 second to switch between “This week’s” and “All-time” videos.
+
 5.4.3 Upvoting/Downvoting Videos is Immediate -- Vote count increments/decrements as soon as user votes.
+
 5.4.4 Accessing User Profile Occurs Within 6-9 Seconds
+    
     5.4.4.1 Login occurs in 6 seconds or less -- Within 6 seconds, user enters username and password, and is redirected to the home page. 
     5.4.4.2 Creating account occurs in 9 seconds or less -- Within 9 seconds, user enters email, username, password, password confirmation and is redirected to the home page.
+
 5.4.5 GUI Design and Usability is focused on the upvote and downvote component of the web app.
+
 5.4.6 Storage Efficiency -- Database shall efficiently store as much data using the least amount of storage
+
 5.4.7 Usability Regarding Video Clips is Efficient as Possible
+    
     5.4.7.1 Video loads within 3 seconds -- Clips are only maximum of 30 seconds and will be sent in bits through a buffer to the user. 
     5.4.7.2 Sharing videos within 4 seconds -- Shareable link is provided immediately for user to copy and paste.
     5.4.7.3 Uploading video within 15 seconds -- It should take less than 15 seconds for a user to upload a video to the database and display it on his/her profile. Clips are only a maximum of 30 seconds and should not be massive files. 
         5.4.7.3.1 Image quality of video shall be maintained through uploading process. 
         5.4.7.3.2 Sound quality of video shall be maintained through uploading process.
+
 5.4.8 Web Page is Updated Consistently -- Vote count, video uploads, ranking/order of videos shall be updated on a user’s screen every time page is reloaded. 
+
 5.4.9 Loading Videos will take under 3 seconds --  A maximum of 8 videos are loaded/added to a page at once when scrolling to the bottom of the page. It should not take longer than 3 seconds to do so.
 
 
