@@ -1,0 +1,16 @@
+OneUpV2 Project SRS Evaluation
+==============================
+
+Nice job on this, a great document.
+
+Dang, guys -- looks like you've perfected this thing!  Good coverage
+of the requirements, good breakdown of things, proper language and all
+the grammar is correct, good descriptive paragraphs for each of your
+components...  You have really got the whole thing down here!!
+
+
+Deliverable D-02: 15% out of 15% = 100% which is an A-plus
+Deliverable D-05:  5% out of  5% = 100% which is an A-plus
+
+Keep up the good work!
+
