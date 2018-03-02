@@ -1,0 +1,70 @@
+#week_or_alltime li {
+    display: inline;
+}
+
+#week_or_alltime li span {
+    color: red;
+}
+
+#week_or_alltime li a {
+    text-decoration: none !important;
+}
+
+#week_or_alltime li span:hover{
+    color: red !important;
+    text-shadow:0 0 1px red, 0 0 1px red, 0 0 1px red !important;
+
+}
+
+b {
+    color: white;
+}
+
+.weekName{
+    color: red;
+    font-family: AppleGothic;
+    font-size: 90%;
+    text-align: center;
+}
+
+
+.divider {
+    width: 100%;
+    float: left;
+    }
+.inner {
+    border-bottom: 1px solid;
+    border-color: white;
+}
+
+.text-left{
+    color: white;
+    font-size: 140%;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+
+.glyphicon.glyphicon-chevron-up{
+    color: red;
+    margin-right: 60px;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+.glyphicon.glyphicon-chevron-down{
+    color: red;
+    margin-right: 60px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.glyphicon.glyphicon-remove{
+    position: fixed;
+    color: red;
+    background-color: #353535;
+    font-size: 10px;
+    height: 20px;
+    left: 622px;
+    bottom: 100px;
+}

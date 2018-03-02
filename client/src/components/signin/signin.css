@@ -1,0 +1,97 @@
+.sign.container-fluid {
+  margin-top: 70px;
+}
+
+.panel > .panel-headingA {
+    border: 0;
+    background-image: url("https://ak9.picdn.net/shutterstock/videos/16866649/thumb/1.jpg?i10c=img.resize(height:160)");
+    font-family: AppleGothic;
+}
+
+.panel > .panel-bodyA {
+    background-position: left center;
+    background-image: url("https://ak9.picdn.net/shutterstock/videos/16866649/thumb/1.jpg?i10c=img.resize(height:160)");
+}
+
+.panel > .panel-headingB {
+    background-image: url("https://ak9.picdn.net/shutterstock/videos/16866649/thumb/1.jpg?i10c=img.resize(height:160)");
+    border: 0;
+    font-family: AppleGothic;
+}
+
+.panel > .panel-bodyB {
+    background-image: url("https://ak9.picdn.net/shutterstock/videos/16866649/thumb/1.jpg?i10c=img.resize(height:160)");
+    background-color: black;
+}
+
+#login-username.form-control {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#login-password.form-control {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#signup-name.form-control {
+   border: 0;
+   background-color: transparent;
+   border-bottom: 1px solid white;
+   color: white;
+}
+
+#signup-email.form-control {
+   border: 0;
+   background-color: transparent;
+   border-bottom: 1px solid white;
+   color: white;
+}
+
+#signup-username.form-control {
+   border: 0;
+   background-color: transparent;
+   border-bottom: 1px solid white;
+   color: white;
+}
+
+#signup-password.form-control {
+   border: 0;
+   background-color: transparent;
+   border-bottom: 1px solid white;
+   color: white;
+}
+
+.input-group-addon {
+    border: 0;
+    background-color: transparent;
+    color: white;
+}
+
+#btn-default {
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    border-color: white;
+    width: 300%;
+}
+
+#btn-default span {
+    color: white;
+}
+
+#btn-default a {
+  text-decoration: none !important;
+}
+
+.createAccountButton {
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    border-color: white;
+    width: 150%;
+}

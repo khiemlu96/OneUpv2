@@ -1,0 +1,29 @@
+.navbar{
+    background-color: black;
+    top: 40px ;
+    margin: 0;
+}
+
+
+.nav.navbar-nav.navbar-right {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0;
+   overflow: hidden;
+   background-color: black;
+   display: inline-block;
+}
+
+li a{
+    font-size: .85em;
+    font-family: AppleGothic;
+    color: white !important;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+ul.nav a:hover {
+    color: white !important;
+    text-shadow:0 0 1px white, 0 0 1px white, 0 0 1px white !important;
+}
