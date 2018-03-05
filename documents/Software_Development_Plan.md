@@ -74,7 +74,7 @@ Development and demonstration for the project require the same hardware:
 	- Processor: 2.5 GHz Intel Core i7
 	- Memory: 16 GB 1600 MHz DDR3
 	- Graphics: Intel Iris Pro 1536 MB
-- WiFi/Ethernet
+- WiFi with possible but improbable latency issues
 - AWS Servers
 	
 #### 4.2.2 Software Resources
