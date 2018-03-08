@@ -1,4 +1,5 @@
-import React from 'react';
+
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import './index.css';
@@ -19,4 +20,16 @@ ReactDOM.render(
     </Route>
   </Router>,
 document.getElementById('root'));
-registerServiceWorker();
+registerServiceWorker(); */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import OneUpApp from './OneUpApp';
+
+
+ReactDOM.render((
+	<BrowserRouter>
+		<OneUpApp />
+	</BrowserRouter>
+), document.getElementById('root'));
