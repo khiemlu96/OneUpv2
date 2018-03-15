@@ -1,0 +1,7 @@
+### 2-26-18 Status Update
+
+Last week we completed front-end routing and begun implemeting json web tokens for authentication. We may also decide to not use passport.js.
+
+This week we will rebuild our modals using new npm packages for a specific react bootstrap modal.
+
+Problems: Possible errors with JWT and also lack of documentation for certain custom modals we are looking to use.
