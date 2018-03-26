@@ -17,9 +17,11 @@ Milestones
 - Week 10: Handle multiple users case
 - Week 11: 
   - Updated Sofware Plan
+- Week 12: 
   - Upvote/Curation component completed
-- Week 12: User page video component
-- Week 13: Re-submit Requirements Specification Document
+- Week 13: 
+  - Re-submit Requirements Specification Document
+  - User page video component
 - Week 14: 
   - Redesign submission forms
   - Preliminary Demonstration Presentations
@@ -47,13 +49,13 @@ Milestones
 - Week 10: Handle multiple users case
   - Handle multiple user logins with correct routing using token authentication
   - Voting components handle multiple votes (limit 1 vote per user on a specific video)
-- Week 11: Updated Sofware Plan & Upvote/Curation component completed
+- Week 11: Updated Software Plan
   - Edited and updated software plan keeping track of tasks completed
+- Week 12: Upvote/Curation component completed
   - Redesigned upvoting and downvoting function that links to backend 
   - Components curated are categorized by week
-- Week 12: User page video component
+- Week 13: Re-submit Requirements Specification Document & User page video component
   - Video component for user uploaded videos and upvoted videos completed
-- Week 13: Re-submit Requirements Specification Document
   - Edited and updated Requirements Specification Document with missing features overlooked previously
 - Week 14: Redesign submission forms & Preliminary Demos
   - Front-end redesign on forms for efficiency and beautiful UI
