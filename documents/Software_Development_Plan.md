@@ -111,7 +111,7 @@ Justin Lee 	| Back-End Lead,  Front-End Developer, Database Design
 #### 4.4.1 GANTT Chart
 
 <p align="center">
-	<img src="../images/GANTTChart.png" alt="High Level Diagram">
+	<img src="../images/OneUpUpdatedGantt.png" alt="High Level Diagram">
 	
 </p>
 
