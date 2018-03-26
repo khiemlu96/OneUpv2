@@ -87,11 +87,13 @@ Development and demonstration for the project require the same hardware:
 - Node.js v8.6.0
 - React.js v16.0.0
 - Express v4.16.2
+- Passport.js
 - EJS v2.5.7
 - Webpack v3.6.0
 - Babel v6.26.0
 - Nodemon v1.12.1
 - Bootstrap
+  - react-bootstrap package
 - GitHub
 - GridFS
 
