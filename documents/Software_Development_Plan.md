@@ -115,16 +115,16 @@ Justin Lee 	| Back-End Lead,  Front-End Developer, Database Design
 	
 </p>
 
-Note: We will be meeting and discussing almost every other day.
+Note: We will be meeting and discussing almost every other day. We live together and are constantly updating one another,
 
 #### 4.4.2 Task/Resource Table
 
-We plan on doing everything together without splitting up the workload too much.
+Because we are a small team, we plan on doing most tasks together without splitting up the workload too much. However, Justin is taking lead on the back-end side of the project while Khiem is focusing on the front-end components.
 
 
 Task     					     | Hardware              | Software                          | Person     
 ---------------------------------------------------- | --------------------- | --------------------------------- |------------
-Handling multiple users		     | Macbook Pro           | Node.js, React, MongoDB, macOS    | Khiem, Justin
+Handling multiple users		     | Macbook Pro           | Node.js, React, MongoDB, macOS, Passport.js    | Khiem, Justin
 Front-end redesign, video modals, AWS          | Macbook Pro           | Node.js, React, MongoDB, macOS    | Khiem
-Back-end restructure, curation structure             | Macbook Pro           | Node.js, React, MongoDB, macOS    | Justin
+Back-end restructure, curation structure             | Macbook Pro           | Node.js, MongoDB, macOS    | Justin
 
