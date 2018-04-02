@@ -6,6 +6,8 @@ This is the Software Requirements Specification (SRS) document that details the 
 
 To build the application, OneUp will contain a front end, server, and database which will be designed using React, Node.js, and MongoDB (respectively). The front end will display the web pages for users to interact with, while the back end server queries the database of skate clips that multiple users can access concurrently. Besides the three main components, OneUp will use EJS as a template engine for dynamic pages, as well as Express -- a Node.js package -- for flexible routing. Other packages of Node.js and React will be used to fulfill the design and building requirements for OneUp. 
 
+This is the second version of OneUp, so there will be a focus on components we were not able to tackel from the first version that can be found here: https://github.com/khiemlu96/OneUp/blob/master/documents/Requirements_Specification.md
+
 <p align="center">
 	<img src="../images/top_level.png" alt="High Level Diagram">
 	
