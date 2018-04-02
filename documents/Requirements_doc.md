@@ -163,6 +163,8 @@ Note: "Should" requirements are requirements we are not 100% sure on following t
 
 5.4.9 Loading Videos will take under 3 seconds --  A maximum of 8 videos are loaded/added to a page at once when scrolling to the bottom of the page. It should not take longer than 3 seconds to do so.
 
+5.4.10 Saving user updated data such as passwords or bio descriptions will take 1 second after save button is clicked.
+
 
 ### 5.5 Project Environment Requirements
 
