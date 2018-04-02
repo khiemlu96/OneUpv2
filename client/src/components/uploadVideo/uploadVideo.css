@@ -1,0 +1,22 @@
+.closeVideoButton {
+   float: right;
+   background-color: black;
+   border: 0;
+ }
+
+.panel > .panel-heading {
+   background-color: black;
+   border: 0;
+}
+
+.panel > .panel-body {
+   background-color: black;
+}
+
+.titleLabel {
+   float: left;
+}
+
+.descriptionLabel {
+   float: left;
+}

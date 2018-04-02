@@ -1,0 +1,113 @@
+.profile.container-fluid{
+  margin-top: 100px;
+}
+
+.profileImage > img.img-circle {
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #FFFFFF;
+    float: left;
+}
+
+.settingsButton {
+    border: 0;
+    background-color: #696969;
+    color: white;
+    display: inline-block;
+    border-radius: 2px;
+    width: 100px;
+}
+
+.settingsButton a span {
+    color: white;
+}
+
+.uploadClips {
+    border: 0;
+    background-color: transparent;
+    border-radius: 25px;
+    float: right;
+}
+
+.uploadClipsButton {
+    border: 0;
+    background-color: transparent;
+    border-radius: 25px;
+    margin-left: 9px;
+}
+
+.glyphicon.glyphicon-plus-sign {
+   font-size: 50px;
+}
+
+.uploadsCount {
+   color: #990000;
+}
+
+.lineBorder {
+   margin-left: 5%;
+   margin-right: 5%;
+   border-style: solid;
+   border-width: 1px;
+   border-length: 75%;
+   border-color: white;
+}
+
+
+
+
+
+
+
+
+.closeButton {
+   float: right;
+   background-color: black;
+   border: 0;
+}
+
+.panel > .panel-heading {
+   background-color: black;
+   border: 0;
+}
+
+.panel > .panel-body {
+   background-color: black;
+}
+
+.changeProfilePicLabel {
+   float: left;
+}
+
+#attachImageButton {
+   background-color: #990000;
+   color: white;
+   border-radius: 5px;
+   border: 0;
+   float: left;
+}
+
+.socialMediaLabel {
+   float: left;
+}
+
+#form {
+   border-radius: 5px;
+   background-color: #808080;
+   border: 0;
+}
+
+#editBioForm {
+   resize: none;
+   border-radius: 5px;
+   background-color: #808080;
+   border: 0;
+}
+
+#saveButton {
+   background-color: #990000;
+   color: white;
+   border-radius: 5px;
+   border: 0;
+}

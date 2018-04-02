@@ -1,0 +1,54 @@
+.closeButton {
+   float: right;
+   background-color: black;
+   border: 0;
+}
+
+.panel > .panel-heading {
+   background-color: black;
+   border: 0;
+}
+
+.panel > .panel-body {
+   background-color: black;
+}
+
+.changeProfilePicLabel {
+   float: left;
+}
+
+/*
+
+#attachImageButton {
+   background-color: #990000;
+   color: white;
+   border-radius: 5px;
+   border: 0;
+   float: left;
+} */
+
+.socialMediaLabel {
+   float: left;
+}
+
+#form {
+   border-radius: 5px;
+   background-color: #808080;
+   border: 0;
+   color: white;
+}
+
+#editBioForm {
+   resize: none;
+   border-radius: 5px;
+   background-color: #808080;
+   border: 0;
+   color: white;
+}
+
+#saveButton {
+   background-color: #990000;
+   color: white;
+   border-radius: 5px;
+   border: 0;
+}

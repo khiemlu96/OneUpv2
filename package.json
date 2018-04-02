@@ -22,5 +22,17 @@
   "homepage": "https://github.com/khiemlu96/OneUpv2",
   "devDependencies": {
     "nodemon": "^1.15.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express-fileupload": "^0.4.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.3",
+    "mongoose": "^5.0.11",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
   }
 }
