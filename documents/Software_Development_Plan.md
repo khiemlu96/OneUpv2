@@ -17,9 +17,11 @@ Milestones
 - Week 10: Handle multiple users case
 - Week 11: 
   - Updated Sofware Plan
+- Week 12: 
   - Upvote/Curation component completed
-- Week 12: User page video component
-- Week 13: Re-submit Requirements Specification Document
+- Week 13: 
+  - Re-submit Requirements Specification Document
+  - User page video component
 - Week 14: 
   - Redesign submission forms
   - Preliminary Demonstration Presentations
@@ -47,13 +49,13 @@ Milestones
 - Week 10: Handle multiple users case
   - Handle multiple user logins with correct routing using token authentication
   - Voting components handle multiple votes (limit 1 vote per user on a specific video)
-- Week 11: Updated Sofware Plan & Upvote/Curation component completed
+- Week 11: Updated Software Plan
   - Edited and updated software plan keeping track of tasks completed
+- Week 12: Upvote/Curation component completed
   - Redesigned upvoting and downvoting function that links to backend 
   - Components curated are categorized by week
-- Week 12: User page video component
+- Week 13: Re-submit Requirements Specification Document & User page video component
   - Video component for user uploaded videos and upvoted videos completed
-- Week 13: Re-submit Requirements Specification Document
   - Edited and updated Requirements Specification Document with missing features overlooked previously
 - Week 14: Redesign submission forms & Preliminary Demos
   - Front-end redesign on forms for efficiency and beautiful UI
@@ -85,11 +87,13 @@ Development and demonstration for the project require the same hardware:
 - Node.js v8.6.0
 - React.js v16.0.0
 - Express v4.16.2
+- Passport.js
 - EJS v2.5.7
 - Webpack v3.6.0
 - Babel v6.26.0
 - Nodemon v1.12.1
 - Bootstrap
+  - react-bootstrap package
 - GitHub
 - GridFS
 
@@ -111,20 +115,20 @@ Justin Lee 	| Back-End Lead,  Front-End Developer, Database Design
 #### 4.4.1 GANTT Chart
 
 <p align="center">
-	<img src="../images/GANTTChart.png" alt="High Level Diagram">
+	<img src="../images/OneUpUpdatedGantt.png" alt="High Level Diagram">
 	
 </p>
 
-Note: We will be meeting and discussing almost every other day.
+Note: We will be meeting and discussing almost every other day. We live together and are constantly updating one another,
 
 #### 4.4.2 Task/Resource Table
 
-We plan on doing everything together without splitting up the workload too much.
+Because we are a small team, we plan on doing most tasks together without splitting up the workload too much. However, Justin is taking lead on the back-end side of the project while Khiem is focusing on the front-end components.
 
 
 Task     					     | Hardware              | Software                          | Person     
 ---------------------------------------------------- | --------------------- | --------------------------------- |------------
-Handling multiple users		     | Macbook Pro           | Node.js, React, MongoDB, macOS    | Khiem, Justin
+Handling multiple users		     | Macbook Pro           | Node.js, React, MongoDB, macOS, Passport.js    | Khiem, Justin
 Front-end redesign, video modals, AWS          | Macbook Pro           | Node.js, React, MongoDB, macOS    | Khiem
-Back-end restructure, curation structure             | Macbook Pro           | Node.js, React, MongoDB, macOS    | Justin
+Back-end restructure, curation structure             | Macbook Pro           | Node.js, MongoDB, macOS    | Justin
 
