@@ -34,6 +34,9 @@ var UserSchema = mongoose.Schema({
     },
     uploads: {
         type: String
+    },
+    upvotedVideos: {
+        type: [String]
     }
 });
 

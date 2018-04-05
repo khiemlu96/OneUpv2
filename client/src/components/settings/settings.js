@@ -23,7 +23,7 @@ class Settings extends Component {
     render() {
       if (this.state.loggedIn === 'null') {
           return (
-            <p>Loading</p>
+            <p></p>
           )
       } else if (!this.state.loggedIn) {
           window.location = '/signin';

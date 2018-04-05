@@ -11,45 +11,49 @@ class Video extends Component {
     }
 
     upvote() {
-        var newVotes = this.state.upvotes + 1;
-        var videoID = this.props.metadata._id;
+        if (this.props.authenticated) {
+          var newVotes = this.state.upvotes + 1;
+          var videoID = this.props.metadata._id;
 
-        this.setState({
-            upvotes: newVotes
-        });
+          this.setState({
+              upvotes: newVotes
+          });
 
-        fetch('/', {
-            method: 'POST',
-            body: JSON.stringify({
-                'newTotalUpvotes': newVotes,
-                'videoID': videoID
-            }),
-            headers: {'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'}
-        }).then(function(response) {
-            return response.json()
-        })
+          fetch('/', {
+              method: 'POST',
+              body: JSON.stringify({
+                  'newTotalUpvotes': newVotes,
+                  'videoID': videoID
+              }),
+              headers: {'Accept': 'application/json, text/plain, */*',
+                  'Content-Type': 'application/json'}
+          }).then(function(response) {
+              return response.json()
+          })
+        }
     }
 
     downvote() {
-        var newVotes = this.state.upvotes - 1;
-        var videoID = this.props.metadata._id;
+        if (this.props.authenticated) {
+          var newVotes = this.state.upvotes - 1;
+          var videoID = this.props.metadata._id;
 
-        this.setState({
-            upvotes: newVotes
-        });
+          this.setState({
+              upvotes: newVotes
+          });
 
-        fetch('/', {
-            method: 'POST',
-            body: JSON.stringify({
-                'newTotalUpvotes': newVotes,
-                'videoID': videoID
-            }),
-            headers: {'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'}
-        }).then(function(response) {
-            return response.json()
-        })
+          fetch('/', {
+              method: 'POST',
+              body: JSON.stringify({
+                  'newTotalUpvotes': newVotes,
+                  'videoID': videoID
+              }),
+              headers: {'Accept': 'application/json, text/plain, */*',
+                  'Content-Type': 'application/json'}
+          }).then(function(response) {
+              return response.json()
+          })
+        }
     }
 
     render() {

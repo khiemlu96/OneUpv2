@@ -16,7 +16,7 @@ const Main = () => (
       <Route path='/about' component={About}/>
       <Route path='/signin' component={SignIn}/>
       <Route path='/register' component={Register}/>
-      <Route path='/profile' component={Profile}/>
+      <Route path='/profile/:user' component={Profile}/>
       <Route path='/settings' component={Settings}/>
       <Route path='/uploadvideo' component={UploadVideo}/>
     </Switch>

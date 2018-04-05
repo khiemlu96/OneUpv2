@@ -68,17 +68,7 @@ router.get('/api/verifyUser', function(request, response) {
     }
 });
 
-router.post('/', function(request, response) {
-    Video.findOneAndUpdate(
-      {_id: request.body.videoID},
-      {$set: {totalUpvotes: request.body.newTotalUpvotes}},
-      function(err, doc) {
-          if (err) {
-              throw err;
-          }
-      }
-    );
-});
+
 
 router.post('/settings', function(request, response) {
     if (request.files) {
@@ -129,7 +119,8 @@ router.post('/uploadvideo', function(request, response) {
 
 
 router.post('/signin', passport.authenticate('local'), function(request, response) {
-    return response.redirect('/profile');
+    var link = '/profile/' + request.user.username;
+    return response.redirect(link);
 });
 
 
