@@ -6,6 +6,8 @@ This is the Software Requirements Specification (SRS) document that details the 
 
 To build the application, OneUp will contain a front end, server, and database which will be designed using React, Node.js, and MongoDB (respectively). The front end will display the web pages for users to interact with, while the back end server queries the database of skate clips that multiple users can access concurrently. Besides the three main components, OneUp will use EJS as a template engine for dynamic pages, as well as Express -- a Node.js package -- for flexible routing. Other packages of Node.js and React will be used to fulfill the design and building requirements for OneUp. 
 
+This is the second version of OneUp, so there will be a focus on components we were not able to tackel from the first version that can be found here: https://github.com/khiemlu96/OneUp/blob/master/documents/Requirements_Specification.md
+
 <p align="center">
 	<img src="../images/top_level.png" alt="High Level Diagram">
 	
@@ -47,7 +49,7 @@ To build the application, OneUp will contain a front end, server, and database w
 
 ### 5.3 Functional Requirements
 
-The main functionality of OneUp is to allow any registered user the ability to share his or her skate clip and receive recognition through the use of upvotes and downvotes from other users. The following requirements of the frontend interface walks through the functionalities that enable a user to easily interact with the web app. As mentioned, the main features for interaction include the ability to upload videos and upvote/downvote other videos seamlessly. The requirements of the server and database explain what is needed to allow successful user interaction, and the efficiency of the backend with querying video data. Choosing the right functional requirements is important to provide a great user experience.
+The main functionality of OneUp is to allow any registered user the ability to share his or her skate clip and receive recognition through the use of upvotes and downvotes from other users. The following requirements of the frontend interface walks through the functionalities that enable a user to easily interact with the web app. As mentioned, the main features for interaction include the ability to upload videos and upvote/downvote other videos seamlessly. The requirements of the server and database explain what is needed to allow successful user interaction, and the efficiency of the backend with querying video data. The ability for the web app to run smoothly with concurrent users (multiple logins and profiles) is also structured within the backend. Choosing the right functional requirements is important to provide a great user experience.
 
 Note: "Should" requirements are requirements we are not 100% sure on following through with.
 
@@ -160,6 +162,8 @@ Note: "Should" requirements are requirements we are not 100% sure on following t
 5.4.8 Web Page is Updated Consistently -- Vote count, video uploads, ranking/order of videos shall be updated on a user’s screen every time page is reloaded. 
 
 5.4.9 Loading Videos will take under 3 seconds --  A maximum of 8 videos are loaded/added to a page at once when scrolling to the bottom of the page. It should not take longer than 3 seconds to do so.
+
+5.4.10 Saving user updated data such as passwords or bio descriptions will take 1 second after save button is clicked.
 
 
 ### 5.5 Project Environment Requirements
