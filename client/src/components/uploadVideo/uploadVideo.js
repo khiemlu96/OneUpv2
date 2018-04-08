@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './uploadVideo.css';
 
 class UploadVideo extends Component {
+
     constructor() {
       super();
       this.state = {
@@ -43,8 +44,8 @@ class UploadVideo extends Component {
                               <form id="signupform" encType="multipart/form-data" method="POST" action="/uploadvideo">
                                   <div className="videos">
                                       <font style={{marginTop: "50px"}} className="videosLabel" color="white" style={{fontFamily:"AppleGothic"}}>Video</font>
-                                      <input type="file" style={{marginLeft: "105px", marginTop: "0px"}}
-                                          className="attachVideoButton" name="videofile" accept='.mov' value="Attach Video" />
+                                      <input type="file" style={{marginLeft: "105px", marginTop: "0px", color: "white"}}
+                                          className="attachVideoButton" name="videofile" accept='.mov' placeholder="Attach Video" />
                                   </div>
                                   <div className="title" style={{marginTop: "35px"}}>
                                       <font className="titleLabel" color="white" style={{fontFamily:"AppleGothic"}}>Title</font>

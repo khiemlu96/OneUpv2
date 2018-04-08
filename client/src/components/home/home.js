@@ -24,6 +24,7 @@ class Home extends Component {
       videos)));
   }
 
+
   render() {
     if (this.state.loggedIn === 'null') {
         return (

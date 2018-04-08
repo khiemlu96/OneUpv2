@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import Modal from '../modal/signInModal.js';
+
 
 /*
 
@@ -12,14 +14,15 @@ class Header extends Component {
     constructor() {
       super();
       this.state = {
-        loggedIn: 'null'
+        loggedIn: 'null',
+        username: ''
       };
     }
 
     componentWillMount() {
        fetch('/api/verifyUser', {credentials: 'include'})
          .then(response => response.json())
-         .then(data => this.setState({loggedIn: data.loggedIn}, () => console.log('Data fetched..',
+         .then(data => this.setState({loggedIn: data.loggedIn, username: data.user.username}, () => console.log('Data fetched..',
          data)));
     }
 
@@ -48,7 +51,7 @@ class Header extends Component {
                               <ul className="nav navbar-nav navbar-right">
                                 <li><Link to='/'>Home</Link></li>
                                 <li><Link to='/about'>About</Link></li>
-                                <li><Link to='/signin'>Sign In / Create Account</Link></li>
+                                <li><Modal /></li>
                               </ul>
                           </div>
 
@@ -57,6 +60,7 @@ class Header extends Component {
               </header>
           );
       } else {
+          var link = '/profile/' + this.state.username;
           return (
               <header>
                   <nav className="navbar navbar-inverse navbar-fixed-top app-navbar" role="navigation" style ={{background:'', top:'0px'}}>
@@ -76,7 +80,7 @@ class Header extends Component {
                               <ul className="nav navbar-nav navbar-right">
                                 <li><Link to='/'>Home</Link></li>
                                 <li><Link to='/about'>About</Link></li>
-                                <li><Link to='/profile'>Profile</Link></li>
+                                <li><Link to={link}>Profile</Link></li>
                               </ul>
                           </div>
 

@@ -10,6 +10,7 @@ import UploadVideo from './components/uploadVideo/uploadVideo';
 
 
 const Main = () => (
+
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>

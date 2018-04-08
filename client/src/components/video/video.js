@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Modal from '../modal/videoModal.js';
+require('./video.css');
 
 class Video extends Component {
     constructor(props) {
@@ -69,9 +71,10 @@ class Video extends Component {
                       </div>
 
                       <div className="col-xs-2 col-md-2" style={{background: '', height: '90px'}}>
-                          <button onClick={this.openModal} className="video btn-primary"
+                          <Modal className="video btn-primary"
                               style={{height: '80px', width: '120px', position: 'absolute', top: '5px',
-                                backgroundImage: "url(public/PageImages/thumbnails.jpg)", backgroundSize: "100% auto"}}></button>
+                                backgroundImage: "url(public/PageImages/thumbnails.jpg)", backgroundSize: "100% auto"}}
+                                  metadata={this.props.metadata} authenticated={this.props.authenticated}></Modal>
                           <div className="center-modalSize" style={{position: 'relative', top: '150px', left: '110px'}}>
 
                           </div>

@@ -27,3 +27,22 @@ ul.nav a:hover {
     color: white !important;
     text-shadow:0 0 1px white, 0 0 1px white, 0 0 1px white !important;
 }
+
+.btn.btn-link{
+  font-size: 12px;
+  font-family: AppleGothic;
+  color: white !important;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none !important;
+
+}
+
+button:hover{
+  color: white !important;
+  text-shadow:0 0 1px white, 0 0 1px white, 0 0 1px white !important
+}
+
+button:focus {
+  outline: none !important;
+}
