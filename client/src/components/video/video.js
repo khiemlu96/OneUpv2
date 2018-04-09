@@ -13,6 +13,7 @@ class Video extends Component {
     }
 
     upvote() {
+        console.log(this.props);
         if (this.props.authenticated) {
           var newVotes = this.state.upvotes + 1;
           var videoID = this.props.metadata._id;
@@ -25,12 +26,12 @@ class Video extends Component {
               method: 'POST',
               body: JSON.stringify({
                   'newTotalUpvotes': newVotes,
-                  'videoID': videoID
+                  'videoID': videoID,
+                  'videoPath': this.props.metadata.videoPath,
+                  'userID': this.props.userID
               }),
               headers: {'Accept': 'application/json, text/plain, */*',
                   'Content-Type': 'application/json'}
-          }).then(function(response) {
-              return response.json()
           })
         }
     }

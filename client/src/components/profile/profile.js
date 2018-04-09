@@ -7,7 +7,9 @@ class Profile extends Component {
       super();
       this.state = {
         loggedIn: 'null',
-        user: {}
+        user: {},
+        uploadedVideos: [],
+        upvotedVideos: []
       }
       // console.log(props);
     }
@@ -15,7 +17,12 @@ class Profile extends Component {
     componentWillMount() {
       fetch('/api/verifyUser', {credentials: 'include'})
         .then(response => response.json())
-        .then(data => this.setState({loggedIn: data.loggedIn, user: data.user}, () => console.log('Data fetched..',
+        .then(data => this.setState({loggedIn: data.loggedIn, user: data.user, upvotedVideos: data.user.upvotedVideos}, () => console.log('Data fetched..',
+        data)));
+
+      fetch('/api/uservideos', {credentials: 'include'})
+        .then(response => response.json())
+        .then(data => this.setState({uploadedVideos: data}, () => console.log('Data fetched..',
         data)));
     }
 

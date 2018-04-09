@@ -68,7 +68,34 @@ router.get('/api/verifyUser', function(request, response) {
     }
 });
 
+// Grab a specific user's videos from the Database
+router.get('/api/uservideos', (request, response) => {
+    Video.find().sort({totalUpvotes: -1}).exec(function (err, video) {
+        response.json(video);
+    });
+});
 
+router.post('/', function(request, response) {
+    Video.findOneAndUpdate(
+      {_id: request.body.videoID},
+      {$set: {totalUpvotes: request.body.newTotalUpvotes}},
+      function(err, doc) {
+          if (err) {
+              throw err;
+          }
+
+          User.findOneAndUpdate(
+            {_id: request.body.userID},
+            {$push: {upvotedVideos: doc}},
+            function(err, doc) {
+                if (err) {
+                    throw err;
+                }
+            }
+          );
+      }
+    );
+});
 
 router.post('/settings', function(request, response) {
     if (request.files) {
@@ -112,6 +139,18 @@ router.post('/uploadvideo', function(request, response) {
                     console.log("video saved");
                     return response.redirect('/');
                 });
+
+/*
+                User.findOneAndUpdate(
+                  {_id: request.user._id},
+                  {$push: {uploadedVideos: 'public/skateclips/' + filename}},
+                  function(err, doc) {
+                      if (err) {
+                          throw err;
+                      }
+                  }
+                ); */
+
             }
         });
     }

@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
+var Video = require('./video');
 
 mongoose.connect('mongodb://test:test@ds113660.mlab.com:13660/oneup');
 
@@ -32,11 +33,8 @@ var UserSchema = mongoose.Schema({
     socialMediaThree: {
         type: String
     },
-    uploads: {
-        type: String
-    },
     upvotedVideos: {
-        type: [String]
+        type: [{}]
     }
 });
 
