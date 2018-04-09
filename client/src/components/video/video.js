@@ -13,7 +13,6 @@ class Video extends Component {
     }
 
     upvote() {
-        console.log(this.props);
         if (this.props.authenticated) {
           var newVotes = this.state.upvotes + 1;
           var videoID = this.props.metadata._id;
@@ -27,12 +26,13 @@ class Video extends Component {
               body: JSON.stringify({
                   'newTotalUpvotes': newVotes,
                   'videoID': videoID,
-                  'videoPath': this.props.metadata.videoPath,
                   'userID': this.props.userID
               }),
               headers: {'Accept': 'application/json, text/plain, */*',
                   'Content-Type': 'application/json'}
           })
+        } else {
+            window.location = "/signin";
         }
     }
 
@@ -49,13 +49,14 @@ class Video extends Component {
               method: 'POST',
               body: JSON.stringify({
                   'newTotalUpvotes': newVotes,
-                  'videoID': videoID
+                  'videoID': videoID,
+                  'userID': this.props.userID
               }),
               headers: {'Accept': 'application/json, text/plain, */*',
                   'Content-Type': 'application/json'}
-          }).then(function(response) {
-              return response.json()
           })
+        } else {
+            window.location = "/signin";
         }
     }
 
@@ -75,7 +76,7 @@ class Video extends Component {
                           <Modal className="video btn-primary"
                               style={{height: '80px', width: '120px', position: 'absolute', top: '5px',
                                 backgroundImage: "url(public/PageImages/thumbnails.jpg)", backgroundSize: "100% auto"}}
-                                  metadata={this.props.metadata} authenticated={this.props.authenticated}></Modal>
+                                  metadata={this.props.metadata} authenticated={this.props.authenticated} rank={this.props.rank} userID={this.props.userID}></Modal>
                           <div className="center-modalSize" style={{position: 'relative', top: '150px', left: '110px'}}>
 
                           </div>

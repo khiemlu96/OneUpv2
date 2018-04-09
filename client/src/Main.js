@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/home/home';
+import AllTime from './components/home/alltime';
 import About from './components/about/about';
 import SignIn from './components/signin/signin';
 import Register from './components/register/register';
@@ -14,6 +15,7 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home}/>
+      <Route path="/alltime" component={AllTime}/>
       <Route path='/about' component={About}/>
       <Route path='/signin' component={SignIn}/>
       <Route path='/register' component={Register}/>

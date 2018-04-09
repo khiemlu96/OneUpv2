@@ -109,7 +109,7 @@ router.post('/settings', function(request, response) {
             } else {
                 var profilePicPath = '/profilepics/' + filename;
                 User.updateUser(request.user.username, request.body, profilePicPath);
-                return response.redirect('/profile');
+                return response.redirect('/profile/' + request.user.username);
             }
         });
     }
@@ -126,7 +126,7 @@ router.post('/uploadvideo', function(request, response) {
             } else {
                 var vid = Video(
                     {
-                        videoPath: 'public/skateclips/' + filename,
+                        videoPath: '/skateclips/' + filename,
                         title: request.body.title,
                         description: request.body.description,
                         username: request.user.username,

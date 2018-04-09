@@ -9,14 +9,15 @@ class Settings extends Component {
     constructor() {
       super();
       this.state = {
-        loggedIn: 'null'
+        loggedIn: 'null',
+        username: ''
       }
     }
 
     componentWillMount() {
        fetch('/api/verifyUser', {credentials: 'include'})
          .then(response => response.json())
-         .then(data => this.setState({loggedIn: data.loggedIn}, () => console.log('Data fetched..',
+         .then(data => this.setState({loggedIn: data.loggedIn, username: data.user.username}, () => console.log('Data fetched..',
          data)));
     }
 
@@ -28,6 +29,7 @@ class Settings extends Component {
       } else if (!this.state.loggedIn) {
           window.location = '/signin';
       } else {
+        var linkToProfile = '/profile/' + this.state.username;
         return (
             <div className="container-fluid">
                 <div className="row">
@@ -37,7 +39,7 @@ class Settings extends Component {
                             <div className="panel-heading">
                                 <div className="row">
                                     <font color="white" size="5" style={{marginLeft: "25px", fontFamily:"AppleGothic"}}>SETTINGS</font>
-                                    <button className="closeButton" onClick={this.closeWindow}><Link to="/profile">
+                                    <button className="closeButton" onClick={this.closeWindow}><Link to={linkToProfile}>
                                         <span className="glyphicon glyphicon-remove"
                                             style={{color: "red", position:"relative", left:"5px", top:"-10"}}></span>
                                     </Link></button><br/>

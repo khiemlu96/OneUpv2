@@ -7,14 +7,15 @@ class UploadVideo extends Component {
     constructor() {
       super();
       this.state = {
-        loggedIn: 'null'
+        loggedIn: 'null',
+        username: ''
       }
     }
 
     componentWillMount() {
       fetch('/api/verifyUser', {credentials: 'include'})
         .then(response => response.json())
-        .then(data => this.setState({loggedIn: data.loggedIn}, () => console.log('Data fetched..',
+        .then(data => this.setState({loggedIn: data.loggedIn, username: data.user.username}, () => console.log('Data fetched..',
         data)));
     }
 
@@ -26,6 +27,7 @@ class UploadVideo extends Component {
       } else if (!this.state.loggedIn) {
           window.location = '/signin';
       } else {
+          var linkToProfile = '/profile/' + this.state.username;
           return (
               <div className="container" style={{marginTop: "200px"}}>
                   <div id="uploadVideoPanel"
@@ -34,7 +36,7 @@ class UploadVideo extends Component {
                           <div className="panel-heading">
                               <font color="white" size="5" style={{marginLeft: "25px", fontFamily:"AppleGothic"}}>UPLOAD CLIP</font>
                               <button className="closeVideoButton">
-                                <Link to="/profile">
+                                <Link to={linkToProfile}>
                                   <span className="glyphicon glyphicon-remove"
                                       style={{color: "red", position:"relative", left:"20px", top:"-10px"}}>
                                   </span>
