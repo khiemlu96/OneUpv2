@@ -29,6 +29,11 @@ class VideoModal extends React.Component {
 
   upvote() {
       if (this.props.authenticated) {
+        for (var i = 0; i < this.props.user.upvotedVideos.length; i++) {
+          if (this.props.user.upvotedVideos[i]._id === this.props.metadata._id) {
+            return;
+          }
+        }
         var newVotes = this.state.upvotes + 1;
         var videoID = this.props.metadata._id;
 
@@ -41,7 +46,8 @@ class VideoModal extends React.Component {
             body: JSON.stringify({
                 'newTotalUpvotes': newVotes,
                 'videoID': videoID,
-                'userID': this.props.userID
+                'userID': this.props.user._id,
+                'vote': 'upvote'
             }),
             headers: {'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'}
@@ -55,6 +61,11 @@ class VideoModal extends React.Component {
 
   downvote() {
       if (this.props.authenticated) {
+        for (var i = 0; i < this.props.user.downvotedVideos.length; i++) {
+          if (this.props.user.downvotedVideos[i] === this.props.metadata._id) {
+            return;
+          }
+        }
         var newVotes = this.state.upvotes - 1;
         var videoID = this.props.metadata._id;
 
@@ -66,7 +77,9 @@ class VideoModal extends React.Component {
             method: 'POST',
             body: JSON.stringify({
                 'newTotalUpvotes': newVotes,
-                'videoID': videoID
+                'videoID': videoID,
+                'userID': this.props.user._id,
+                'vote': 'downvote'
             }),
             headers: {'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'}
@@ -79,8 +92,6 @@ class VideoModal extends React.Component {
   }
 
   render() {
-    console.log("these are the props boiii");
-    console.log(this.props);
     return (
       <div>
         <Button bsStyle="primary" bsSize="large" onClick={this.handleShow} style = {{padding: '30px 5px', fontSize: '10px', marginTop: '10px'}}>

@@ -84,15 +84,27 @@ router.post('/', function(request, response) {
               throw err;
           }
 
-          User.findOneAndUpdate(
-            {_id: request.body.userID},
-            {$push: {upvotedVideos: doc}},
-            function(err, doc) {
-                if (err) {
-                    throw err;
+          if (request.body.vote === 'upvote') {
+              User.findOneAndUpdate(
+                {_id: request.body.userID},
+                {$push: {upvotedVideos: doc}},
+                function(err, doc) {
+                    if (err) {
+                        throw err;
+                    }
                 }
-            }
-          );
+              );
+          } else {
+              User.findOneAndUpdate(
+                {_id: request.body.userID},
+                {$push: {downvotedVideos: doc._id}},
+                function(err, doc) {
+                    if (err) {
+                        throw err;
+                    }
+                }
+              );
+          }
       }
     );
 });

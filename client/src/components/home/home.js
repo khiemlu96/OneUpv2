@@ -9,14 +9,14 @@ class Home extends Component {
     this.state = {
       videos: [],
       loggedIn: 'null',
-      userID: ''
+      user: {}
     }
   }
 
   componentWillMount() {
     fetch('/api/verifyUser', {credentials: 'include'})
       .then(response => response.json())
-      .then(data => this.setState({loggedIn: data.loggedIn, userID: data.user._id}, () => console.log('Data fetched..',
+      .then(data => this.setState({loggedIn: data.loggedIn, user: data.user}, () => console.log('Data fetched..',
       data)));
 
     fetch('/api/videos')
@@ -33,11 +33,11 @@ class Home extends Component {
         );
     } else {
         var loggedIn = this.state.loggedIn;
-        var userID = this.state.userID;
+        var user = this.state.user
         var videoComponents = this.state.videos.map(function(videodata, index) {
             var rank = index + 1;
             return (
-                <Video key={index} rank={rank} metadata={videodata} authenticated={loggedIn} userID={userID}/>
+                <Video key={index} rank={rank} metadata={videodata} authenticated={loggedIn} user={user}/>
             );
         });
         return (
