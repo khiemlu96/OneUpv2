@@ -88,7 +88,8 @@ class Video extends Component {
                           <Modal className="video btn-primary"
                               style={{height: '80px', width: '120px', position: 'absolute', top: '5px',
                                 backgroundImage: "url(public/PageImages/thumbnails.jpg)", backgroundSize: "100% auto"}}
-                                  metadata={this.props.metadata} authenticated={this.props.authenticated} rank={this.props.rank} user={this.props.user}></Modal>
+                                  metadata={this.props.metadata} authenticated={this.props.authenticated} rank={this.props.rank} user={this.props.user}>            
+                          </Modal>
                           <div className="center-modalSize" style={{position: 'relative', top: '150px', left: '110px'}}>
 
                           </div>
