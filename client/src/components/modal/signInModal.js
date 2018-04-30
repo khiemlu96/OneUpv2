@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Modal from 'react-bootstrap/lib/Modal';
 import Button from 'react-bootstrap/lib/Button';
 import { Link } from 'react-router-dom';
+import RegisterModal from './registerModal.js'
 
 
 class SignInModal extends React.Component {
@@ -60,8 +61,7 @@ class SignInModal extends React.Component {
                                                 id="btn-default" value="LOGIN"/>
                                         </div>
                                         <div className="row">
-                                            <button type="button" style={{marginLeft: "75%", marginTop: "10px"}}
-                                                id="btn-default"><Link to="/register"><span>SIGN UP</span></Link></button>
+                                            <RegisterModal />
                                         </div>
                                     </div>
                                 </div>

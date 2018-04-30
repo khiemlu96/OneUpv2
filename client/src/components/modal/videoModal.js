@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Modal from 'react-bootstrap/lib/Modal';
 import Button from 'react-bootstrap/lib/Button';
+import "video-react/dist/video-react.css"; // import css
+import { Player, BigPlayButton, PosterImage } from 'video-react';
 
 class VideoModal extends React.Component {
 
@@ -94,7 +96,8 @@ class VideoModal extends React.Component {
   render() {
     return (
       <div>
-        <Button bsStyle="primary" bsSize="large" onClick={this.handleShow} style = {{padding: '30px 5px', fontSize: '10px', marginTop: '10px'}}>
+
+        <Button bsStyle="primary" bsSize="small" onClick={this.handleShow} style = {{padding: '30px 5px', fontSize: '10px', marginTop: '10px'}}>
           Launch demo modal
         </Button>
 
@@ -102,9 +105,10 @@ class VideoModal extends React.Component {
           <Modal.Header closeButton style = {{backgroundColor:'#403F3F'}}>
             <Modal.Title style = {{color: 'red'}}>Week 1 - Ranked # {this.props.rank}</Modal.Title>
           </Modal.Header>
-          <Modal.Body style = {{backgroundColor:'#403F3F', color:'white', fontFamily:'AppleGothic', fontSize:'10px', height:'355px'}}>
-            <video width="500" height="240" style={{marginLeft: '30px'}} src={this.props.metadata.videoPath} controls>
-            </video>
+          <Modal.Body style = {{backgroundColor:'#403F3F', color:'white', fontFamily:'AppleGothic', fontSize:'10px', height:'430px'}}>
+            <Player width="500" height="220"style={{marginLeft: '30px'}} src={this.props.metadata.videoPath}>
+              <BigPlayButton position="center" />
+            </Player>
 
             <div className = "col-xs-12 col-md-12" style={{background:'', height: '70px', top: '20px'}}>
               <div className="col-xs-12 col-md-3"
